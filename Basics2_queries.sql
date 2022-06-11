@@ -24,5 +24,45 @@ alter  table employee add exp int;
 -- inserting particular coloumn
 
 insert into employee(id,ename) values (10,"ramya");
+-- where clause
+select * from employee
+where ename like 'A%';
 
 select * from employee
+where ename="aarthi";
+
+select * from employee
+where sal>250000;
+
+select * from employee
+where sal<25000;
+
+select * from employee
+where ename <> "Arikaran";
+
+select id,ename from employee
+where sal>=250000;
+
+select * from employee
+where sal between 250000 and 600000;
+
+select * from employee
+where ename ="Ramya" or ename="Arikaran";
+
+select * from employee
+where job_desc="HR";
+
+-- Like
+
+select * from employee
+where ename like '%i%';
+
+select * from employee
+where ename like '__i%';
+
+update employee
+set job_desc="Manager" WHERE id=3;
+
+select * from employee;
+
+
