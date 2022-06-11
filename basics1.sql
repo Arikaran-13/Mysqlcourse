@@ -1,17 +1,19 @@
 use arikaran;
--- drop table studentdata; commented
+DROP TABLE CUSTOMER_MANAGEMENT;
 
+CREATE TABLE CUSTOMER_DATA(
+ID INT PRIMARY KEY,
+NAME VARCHAR(25),
+ORDERNUMBER INT,
+ORDERDATE DATE,
+STATUS VARCHAR(15)
 
-drop table student;
-create table student(
-  id int primary key,
-  name varchar(25),
-  gpa decimal(3,2)
-  
 );
-insert into student values(1,"Ari",7.5),
-(2,"ram",8.0),
-(3,"monisha",9.9);
-alter table student add std int;
 
-select * from student;
+INSERT INTO CUSTOMER_DATA VALUES 
+(2,"LILLY",023,"2022/12/2","SHIPPED"),
+(3,"MORRIES",002,"2022/11/2","DELEIVERD"),
+(4,"ROMEN REIGNS",003,"2022/11/3","SHIPPED"),
+(5,"PETER PARKER",004,"2022/11/5","SHIPPED"),
+(6,"TONY STARK",005,"2022/10/5","RETURNED");
+SELECT * FROM CUSTOMER_DATA;
